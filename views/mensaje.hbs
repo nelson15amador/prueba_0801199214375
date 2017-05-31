@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mensaje</title>
+  </head>
+  <body>
+    <h1>datos a ingresar</h1>
+    <form action="/mensaje" method="post">
+    <label for="txtmensaje">Ingrese un mensaje</label>
+    <input type="text" name="txtmensaje" id="txtmensaje" autocomplete="off"
+    placeholder="Ingrese un mensaje" value="{{txtmensaje}}">
+    <br>
+    <input type="submit" name="ingresar" value="Aceptar" id="ingresar"/>
+    </form>
+    <div>
+      <ul>
+        {{#each msg}}
+        <li>
+          {{this}}Prueba
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </body>
+</html>
